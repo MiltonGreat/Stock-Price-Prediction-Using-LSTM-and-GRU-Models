@@ -6,18 +6,18 @@ This project aims to predict stock prices using LSTM (Long Short-Term Memory) an
 
 ### Dataset
 
-The dataset used for this project contains historical stock price data for various companies. Metadata:
+Dataset Description
 
-- Ticker: Stock ticker symbol (e.g., 'A' for Apple)
-- Date: The date of the stock price
-- Open: The opening price of the stock for that day
-- High: The highest price of the stock during that day
-- Low: The lowest price of the stock during that day
-- Close: The closing price of the stock for that day
-- Adj Close: The adjusted closing price, accounting for stock splits and dividends
-- Volume: The number of shares traded on that day
+The dataset contains historical stock price data for various companies, with each entry representing a single day of trading. Below is a detailed description of each column in the dataset:
 
-The dataset contains 5964 entries across 8 columns.
+- Ticker: The stock symbol for the company. Each entry in this column represents a different company, such as 'A' for one specific company.
+- Date: The date of the stock price data entry, formatted as YYYY-MM-DD. This column helps in organizing the data chronologically, allowing time-based analysis and forecasting.
+- Open: The price of the stock at the beginning of the trading day. It represents the price at which the stock first traded when the market opened on that particular day.
+- High: The highest price that the stock reached during the trading day. This shows the peak price the stock was sold for on that particular day.
+- Low: The lowest price the stock reached during the trading day. This represents the bottom point during the day for the stock price.
+- Close: The last price at which the stock was traded during the day. It’s typically used as the reference price for that day and is often the most important data point for financial analysis.
+- Adj Close (Adjusted Close): The closing price of the stock adjusted for actions like dividends, stock splits, etc. This is crucial for a more accurate reflection of stock performance, as it accounts for such events that affect stock value but not the market price directly.
+- Volume: The total number of shares that were traded on that particular day. This is an important indicator of market activity, showing how much interest or liquidity there is in the stock for that day.
 
 ### Steps Involved
 
